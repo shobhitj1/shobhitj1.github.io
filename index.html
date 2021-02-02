@@ -1,52 +1,90 @@
 <!DOCTYPE html>
-<html lang='en'>
-<head>
-	<meta charset="UTF-8">
-	<title>Index page</title>
-	<link rel="icon" type="image/png" href="shobhitx.github.io/imgs/icon.png">
-</head>
-	<body>
-		<header>
-		<h1>Shobhit Jindal</h1>
-			<nav>
-				<a href="http://www.github.com">Github</a>
-				<a href="http://facebook.com">Facebook</a>
-				<a href="http://linkedin.com">Linkedin</a>
-				<a href="http://instagram.com">Instagram</a>
-			</nav>
-		</header>
-		
-		<section>
-		<h2>Favorite Foods</h2>
-			<ul>
-					<li>Pizza</li>
-					<li>Burger</li>
-					<li>Apple pie</li>
-					<li>Sandwich</li>
-			</ul>
-		</section>
-		
-		<section>
-		<h2>Achievements</h2>
-			<p>Progress in this course (100%)<progress value="1"></progress><br/>
-				Progress in the Specialization capstone (20%)<progress value="20" max="100"></progress><br/>
-				Progress in life goals (67%)<progress value="67" max="100"></progress></p>
-		</section>
-		<section>
-			<h2>More about me</h2>
-			<details close>
-				<summary>My Childhood</summary>
-				<p>I had best times of my life.</p>
-			</details>
-		</section>
-		<footer>
-			<p>
-					This page was created by Shobhit Jindal. Check out this hosted website-
-					<a href="http://shobhit.byethost7.com/">Shobhit Jindal</a>.
-			</p>
-		</footer>
-		
-		
-	</body>	
-</html>
+<html>
 
+<head>
+    <meta charset="utf-8">
+    <title>Shobhit Jindal</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+    <div id=container>
+            <div id="header">
+                SHOBHIT JINDAL
+            </div>
+
+            <div id=content>
+    
+                <div id=nav>
+                    <ul>
+                        <li><a class="selected" href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div id=main>
+                    <h2>Achievements</h2>
+			            <p>
+                            Progress in this course (100%)<progress value="1"></progress><br/>
+				            Progress in the Python (20%)<progress value="20" max="100"></progress><br/>
+                            Progress in life goals (67%)<progress value="67" max="100"></progress>
+                        </p>
+                </div>
+            </div>
+
+            <div id=formx>
+                <p class="con">LET'S GET IN TOUCH :)</p>
+                <p style="color: brown; text-align: center;margin-bottom: 0;">So I have created a basic contact form to get details of a person to get in touch with later on...</p>
+                <form>
+                    <p class="con">YOUR BASIC DEAILS:</p>
+                    First Name: <br>
+                    <input type="text" name="firstname"  required onblur="myFunction1()" ><br>
+                    Last Name: <br>
+                    <input type="text" name="lastname"  required><br>
+                    <label for="password">User Password</label><br>
+                    <input type="password" name="password"><br>
+
+                    <input type="radio" name="gender" value="male">Male <br>
+                    <input type="radio" name="gender" value="female">Female <br>
+                    <input type="radio" name="gender" value="other">Other <br>
+                    <p class="con">CONTACT DETAILS:</p> <br>
+                    Email id: <br>
+                    <input type="email" id="mail" name="contact" onblur="myFunction()" required ><br>
+                    Phone Number: <br>
+                    <input type="number" name="contact" ><br>
+
+                    <input type="checkbox" name="contact" value="mail">contact via email <br>
+                    <input type="checkbox" name="contact" value="call">contact via call<br>
+                    
+                    <input type="submit" value="Submit">
+
+                </form> <!--A basic form to make a request for contact details-->
+            </div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png" alt="HTML logo" width=20% height=20% style="padding: 5%;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/800px-CSS3_logo_and_wordmark.svg.png" alt="CSS logo" width=14% height=14% style="padding-top: 5%;padding-bottom:5%; padding-left: 8%;">
+            <img src="https://1000logos.net/wp-content/uploads/2020/09/JavaScript-Logo.png" alt="JS logo" width=32% height=35% style="padding: 5%;">
+            <div id=footer>
+                Copyright &copy; 2021 Shobhit Jindal.
+            </div>
+
+    </div>
+    
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("mail");
+          x.value = x.value.toUpperCase(); //using onblur to capitalize the mail id
+
+        } 
+
+        function myFunction1() {
+            alert("Input field lost focus, we used- onblur");
+        } // using on blur to show pop up alert on the browser
+
+
+    </script>
+     <!--not using external js,else would have used <script src="app.js"></script> -->
+</body>
+
+</html>
