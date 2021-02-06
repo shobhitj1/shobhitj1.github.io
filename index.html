@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 
-<body>
+<body class="Orange-theme">
     <div id=container>
             <div id="header">
                 SHOBHIT JINDAL
@@ -17,25 +17,37 @@
     
                 <div id=nav>
                     <ul>
-                        <li><a class="selected" href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a class="selected" href="https://github.com/shobhitj1">
+                            <img src="https://maxcdn.icons8.com/Share/icon/Logos/github_filled1600.png" alt="Github" style="width:38px;height:38px;">
+                        </a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/in/shobhit-jindal-16476b1b1/">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Linkedin_Shiny_Icon.svg/768px-Linkedin_Shiny_Icon.svg.png" alt="Linkedin" style="width:38px;height:38px;">
+                        </a>
+                        </li>
+                        <li><a href="https://www.instagram.com">
+                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.windowscentral.com%2Fsites%2Fwpcentral.com%2Ffiles%2Fstyles%2Flarge%2Fpublic%2Ftopic_images%2F2016%2Fnew-instagram-icon-topic.png%3Fitok%3Df9FRpYnH&f=1&nofb=1" alt="Insta" style="width:38px;height:38px;">
+                        </a>
+                        </li>
                     </ul>
                 </div>
 
                 <div id=main>
                     <h2>Achievements</h2>
 			            <p>
-                            Progress in this course (100%)<progress value="1"></progress><br/>
-				            Progress in the Python (20%)<progress value="20" max="100"></progress><br/>
-                            Progress in life goals (67%)<progress value="67" max="100"></progress>
+                            Progress in this course (100%) <br><progress class="bar" value="1"></progress><br/>
+				            Progress in python (20%) <br><progress class="bar" value="20" max="100"></progress><br/>
+                            Progress in life goals (37%) <br><progress class="bar" value="37" max="100"></progress>
                         </p>
                 </div>
             </div>
 
-            <div id=formx>
+            <div class="Orange-theme" id=formx> 
                 <p class="con">LET'S GET IN TOUCH :)</p>
-                <p style="color: brown; text-align: center;margin-bottom: 0;">So I have created a basic contact form to get details of a person to get in touch with later on...</p>
+                <p style="color: brown; text-align: center;margin-bottom: 0;">
+                    So I have created a basic contact form to get details of a person to get in touch with later on... <br>
+                    We can afterwards save the input by the user through backend.
+                </p>
                 <form>
                     <p class="con">YOUR BASIC DEAILS:</p>
                     First Name: <br>
@@ -64,12 +76,17 @@
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png" alt="HTML logo" width=20% height=20% style="padding: 5%;">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/800px-CSS3_logo_and_wordmark.svg.png" alt="CSS logo" width=14% height=14% style="padding-top: 5%;padding-bottom:5%; padding-left: 8%;">
             <img src="https://1000logos.net/wp-content/uploads/2020/09/JavaScript-Logo.png" alt="JS logo" width=32% height=35% style="padding: 5%;">
+
+            <p style="text-align:right; margin-right: 10px;"><button id="top" onclick="document.location=' file:///S:/web%20development/Coursera%20project/index.html '">Back To Top</button></p>
+
             <div id=footer>
                 Copyright &copy; 2021 Shobhit Jindal.
             </div>
 
     </div>
-    
+    <div>
+        <button class="btn">Orange</button>
+    </div>
 
     <script>
         function myFunction() {
@@ -84,7 +101,7 @@
 
 
     </script>
-     <!--not using external js,else would have used <script src="app.js"></script> -->
+    <script src="app.js"></script> 
 </body>
 
 </html>

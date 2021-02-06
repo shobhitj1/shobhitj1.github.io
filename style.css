@@ -25,6 +25,7 @@ h1,h2{
     padding-left: 20%;
     padding-right: 20%;
     border-radius: 50px;
+    margin-top: 60px;
     
 }
 .con{
@@ -50,6 +51,7 @@ h1,h2{
     font-size: 33px;
     color: orange;
     padding: 10px;
+    padding-left: 60px;
   }
   
   #content{
@@ -68,8 +70,10 @@ h1,h2{
       list-style-type: none;
   }    
   #main{
-      width: 90%;
+      width: 94%;
       float: right;
+      
+      
   }
   #footer{
       clear: both;
@@ -134,3 +138,60 @@ h1,h2{
     margin-right: auto;
     
   }
+  #top{
+    color: rgb(255, 153, 0);
+    background-color: transparent;
+    font-weight: bold;
+    border-radius: 10%;
+    
+  }
+  .bar {
+    height:24px;
+    width:20%;
+  }
+
+/*switch part*/
+
+  .Orange-theme {
+    --bg: var(--green);
+  --fontColor: var(--z);
+  --btnBg: var(--black);
+  --btnFontColor: var(--white);
+ }
+ 
+ .Grey-theme {
+    --bg: var(--black);
+    --fontColor: var(--z);
+    --btnBg: var(--white);
+    --btnFontColor: var(--green); }
+
+    .btn {
+      color: var(--btnFontColor);
+      background-color: var(--btnBg);
+  } 
+  .btn {
+     position: absolute;
+     top: 1%;
+     left: 3%;
+     height: 50px;
+     width: 50px;
+     border-radius: 50%;
+     border: none;
+     color: var(--btnFontColor);
+     background-color: var(--btnBg);
+     
+   }
+   .btn:focus { outline-style: none; } 
+  :root {
+     --green: #645f5f;
+     --white: #ffffff;
+     --black:  rgb(253, 184, 142);
+     --z: #2f2f2f;
+   }  
+   * {
+    color: var(--fontColor);
+    font-family: helvetica;
+  }   
+  body {
+    background: var(--bg);
+}
